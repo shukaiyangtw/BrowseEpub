@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Album" xml:space="preserve">
+    <value>Album</value>
+  </data>
+  <data name="AlbumFileList" xml:space="preserve">
+    <value>Album Files in the Directory</value>
+  </data>
+  <data name="AlbumInfo" xml:space="preserve">
+    <value>Album Info.</value>
+  </data>
+  <data name="AnalyzingEpubMsg" xml:space="preserve">
+    <value>Analyzing the album EPUB file...</value>
+  </data>
+  <data name="AppTitle" xml:space="preserve">
+    <value>Album EPUB Browser</value>
+  </data>
+  <data name="Ascending" xml:space="preserve">
+    <value>Ascending Order</value>
+  </data>
+  <data name="At" xml:space="preserve">
+    <value>at</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>Album Author:</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="BeginDate" xml:space="preserve">
+    <value>Photo Date (Begin):</value>
+  </data>
+  <data name="BrowseFile" xml:space="preserve">
+    <value>Browse File</value>
+  </data>
+  <data name="BrowseFileMsg" xml:space="preserve">
+    <value>Please pick an .album.epub file to read....</value>
+  </data>
+  <data name="ByAuthor" xml:space="preserve">
+    <value>By Author</value>
+  </data>
+  <data name="ByDate" xml:space="preserve">
+    <value>By Date</value>
+  </data>
+  <data name="ByFilename" xml:space="preserve">
+    <value>By Filename</value>
+  </data>
+  <data name="ByTitle" xml:space="preserve">
+    <value>By Title</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Chapter" xml:space="preserve">
+    <value>Chapter</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="ClearCacheMsg" xml:space="preserve">
+    <value>Clear the cached album data...</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Descending" xml:space="preserve">
+    <value>Descending Order</value>
+  </data>
+  <data name="DetailViewMode" xml:space="preserve">
+    <value>Detail View</value>
+  </data>
+  <data name="DirectoryNotExist" xml:space="preserve">
+    <value>The directory does not exist.</value>
+  </data>
+  <data name="Done" xml:space="preserve">
+    <value>Done.</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>Photo Date (End):</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ExportPhotoMsg" xml:space="preserve">
+    <value>Please select the file name and folder of the exported photo.</value>
+  </data>
+  <data name="FileExportedOK" xml:space="preserve">
+    <value>The file is exported to</value>
+  </data>
+  <data name="FileNotFound" xml:space="preserve">
+    <value>The file does not exist.</value>
+  </data>
+  <data name="FindInAlbums" xml:space="preserve">
+    <value>Find in Albums</value>
+  </data>
+  <data name="FoundParagraphs" xml:space="preserve">
+    <value>Found paragraphs:</value>
+  </data>
+  <data name="HelpUrl" xml:space="preserve">
+    <value>https://www.cyberworlds.net/bwsepub/manual_en.php</value>
+  </data>
+  <data name="IconViewMode" xml:space="preserve">
+    <value>Icon View</value>
+  </data>
+  <data name="InflateFilesMsg" xml:space="preserve">
+    <value>Inflate necessary files from the EPUB file...</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Photo Location:</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>More...</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NoResultMsg" xml:space="preserve">
+    <value>Nothing is found.</value>
+  </data>
+  <data name="NotAnAlbumEpub" xml:space="preserve">
+    <value>The file is not an album!</value>
+  </data>
+  <data name="OnlineHelp" xml:space="preserve">
+    <value>Online Help</value>
+  </data>
+  <data name="ParagraphText" xml:space="preserve">
+    <value>Paragraph Text:</value>
+  </data>
+  <data name="Preface" xml:space="preserve">
+    <value>Preface</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Read" xml:space="preserve">
+    <value>Read the Album</value>
+  </data>
+  <data name="Ready" xml:space="preserve">
+    <value>Ready.</value>
+  </data>
+  <data name="RefreshingMsg" xml:space="preserve">
+    <value>Fetching the album information in the working directory...</value>
+  </data>
+  <data name="Rotate" xml:space="preserve">
+    <value>Rotate</value>
+  </data>
+  <data name="SaveAs" xml:space="preserve">
+    <value>Save As...</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SearchHintMsg" xml:space="preserve">
+    <value>Please pick the range of photo dates, optionally key in the words to search in fields, then click the search button.</value>
+  </data>
+  <data name="SearchingInAlbum" xml:space="preserve">
+    <value>Searching in the album...</value>
+  </data>
+  <data name="SelectFileMsg" xml:space="preserve">
+    <value>Please select an album in the list.</value>
+  </data>
+  <data name="Sort" xml:space="preserve">
+    <value>Sort</value>
+  </data>
+  <data name="StartSearching" xml:space="preserve">
+    <value>Start searching...</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Album Title:</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="UserCancelMsg" xml:space="preserve">
+    <value>The user has cancelled the process.</value>
+  </data>
+  <data name="WelcomeMsg" xml:space="preserve">
+    <value>Double click on an album to read it.</value>
+  </data>
+</root>
