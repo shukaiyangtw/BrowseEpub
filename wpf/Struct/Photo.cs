@@ -4,14 +4,11 @@
  *  這個資料結構用於裝載照片檔案資訊，並且提供從相簿檔案中解壓出 BitmapImage 的功能。
 
  *  @author Shu-Kai Yang (skyang@csie.nctu.edu.tw)
- *  @date 2024/5/9 */
+ *  @date 2024/6/15 */
 
 using System;
-using System.Drawing;
-using System.Drawing.Imaging;
 using System.IO;
 using System.IO.Compression;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace BrowseEpub
@@ -23,6 +20,10 @@ namespace BrowseEpub
 
         private Int32 m_photoIndex = 0;
         public Int32 Index {  get { return m_photoIndex; }  }
+
+        private const int m_exifOrientationID = 0x112;
+        private int m_rotateDrgrees = 0;
+        public Int32 RotateDegrees {  get {  return m_rotateDrgrees;  }  }
 
         /// <summary>
         /// 照片檔案名稱。
@@ -85,8 +86,34 @@ namespace BrowseEpub
                                 stream.Close();
                                 ms.Seek(0, SeekOrigin.Begin);
 
-                                /// 直接解壓縮影像為 BitmapImage 並且傳回之，會忽略 EXIF 資訊:
-                                BitmapImage img = new BitmapImage();
+                                String fileExt = Path.GetExtension(m_fileName).ToLower();
+                                if (fileExt.Equals(".jpg") || fileExt.Equals(".jpeg"))
+                                {
+                                    /// 如果是 JPEG 檔案，使用 System.Drawing 的功能以軟體解碼，以讀取 EXIF 資訊:
+                                    System.Drawing.Image bmp = System.Drawing.Image.FromStream(ms);
+
+                                    foreach (int id in bmp.PropertyIdList)                                    
+                                    {
+                                        if (id == m_exifOrientationID)
+                                        {
+                                            var prop = bmp.GetPropertyItem(m_exifOrientationID);
+                                            int val = BitConverter.ToUInt16(prop.Value, 0);
+
+                                            if ((val == 3) || (val == 4)) {  m_rotateDrgrees = 180;  }
+                                            if ((val == 5) || (val == 6)) {  m_rotateDrgrees = 90;   }
+                                            if ((val == 7) || (val == 8)) {  m_rotateDrgrees = 270;  }
+                                            break;  
+                                        }
+                                    }
+
+                                    /// 將 Image 另存為不壓縮的 Bitmap 格式:
+                                    ms = new MemoryStream();
+                                    bmp.Save(ms, System.Drawing.Imaging.ImageFormat.Bmp);
+                                    ms.Seek(0, SeekOrigin.Begin);
+                                }
+
+                                /// 使用 GDI+ 的功能將記憶體解碼為 UI 元件:
+                                BitmapImage img = img = new BitmapImage();
                                 img.CacheOption = BitmapCacheOption.None;
                                 img.BeginInit();
                                 img.StreamSource = ms;
@@ -98,7 +125,6 @@ namespace BrowseEpub
                 }
 
                 return null;
-
             }
         }
 
