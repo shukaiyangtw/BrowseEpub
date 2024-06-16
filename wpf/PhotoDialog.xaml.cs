@@ -4,10 +4,9 @@
  *  這個視窗包含了一個簡單的相片顯示器，並且實作了另存檔案的功能。
 
  *  @author Shu-Kai Yang (skyang@csie.nctu.edu.tw)
- *  @date 2024/5/10 */
+ *  @date 2024/6/14 */
 
 using System;
-using System.Drawing;
 using System.IO;
 using System.IO.Compression;
 using System.Windows;
@@ -117,11 +116,24 @@ namespace BrowseEpub
 
             /// 在視窗標題和頁面控制項顯示 Photo 的資訊。
             m_bitmap = Photo.PhotoImageSrc;
-            m_rotateDrgrees = 0;
 
             int i = index + 1;
             Title = Photo.FileName + " ( " + i + " of " + photoCount + " )";
-            PhotoViewer.Source = m_bitmap;
+
+            m_rotateDrgrees = Photo.RotateDegrees;
+            if (m_rotateDrgrees != 0)
+            {
+                RotateTransform transform = new RotateTransform(m_rotateDrgrees);
+                TransformedBitmap bmp = new TransformedBitmap();
+                bmp.BeginInit();
+                bmp.Source = m_bitmap;
+                bmp.Transform = transform;
+                bmp.EndInit();
+                PhotoViewer.Source = bmp;
+            }
+            else
+            {   PhotoViewer.Source = m_bitmap;  }
+
             MessageLabel.Text = Photo.Description;
         }
 
