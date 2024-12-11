@@ -172,7 +172,7 @@ namespace BrowseEpub
             /// 開啟檔案對話方塊以選擇輸出的檔案名稱與類型:
             System.Windows.Forms.SaveFileDialog dialog = new System.Windows.Forms.SaveFileDialog();
             if (fileExt.Equals(".png")) { dialog.Filter = "PNG files (*.png)|*.png"; }
-            else { dialog.Filter = "JPEG files (*.jpg;*.jpeg)|*.jpg;*.jpeg"; }
+            else {  dialog.Filter = "JPEG files (*.jpg;*.jpeg)|*.jpg;*.jpeg";  }
             dialog.Title = Properties.Resources.ExportPhotoMsg;
             dialog.FileName = Photo.FileName;
             dialog.DefaultExt = fileExt;
