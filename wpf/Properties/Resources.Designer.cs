@@ -349,7 +349,7 @@ namespace BrowseEpub.Properties {
         }
         
         /// <summary>
-        ///   查詢類似 https://www.cyberworlds.net/bwsepub/manual_en.php 的當地語系化字串。
+        ///   查詢類似 https://shukaiyangtw.github.io/BrowseEpub/manual_en.htm 的當地語系化字串。
         /// </summary>
         public static string HelpUrl {
             get {
