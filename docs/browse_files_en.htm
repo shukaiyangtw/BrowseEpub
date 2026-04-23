@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    <title>Album EPUB Browser - shukaiyangtw.github.io</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="style_toc.css" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <script type="text/javascript">
+
+        function onTocClicked()
+        {
+            let toc = document.getElementById("toc_div");
+            if (toc.style.display == "block") {  toc.style.display = "none";  }
+            else {  toc.style.display = "block";  }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+<div id="page_container">
+    <div id="action_bar_row">
+        <div id="action_bar">
+
+            <div class="action_bar_button">
+                <a href="index_en.htm"><img src="images/back.png" /></a>
+                <a class="action_bar_textlink" href="index_en.htm">Introduction</a>
+            </div>
+
+            <div id="toc_button" class="action_bar_button">
+                <a href="javascript: onTocClicked();"><img src="images/toc.png" /></a>
+                <a class="action_bar_textlink" href="javascript: onTocClicked();">Topics</a>
+            </div>
+
+            <div class="action_bar_title">
+                Album EPUB Browser User Manual
+            </div>
+
+            <div class="action_bar_button">
+                <a href="index_zh.htm"><img src="images/lang.png" /></a>
+                <a class="action_bar_textlink" href="browse_files_zh.htm">中文</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="context_row">
+        <div class="context_wrapper" style="position: relative">
+
+        <div id="toc_div">
+            <ul>
+                <li><a id="toc_overview" href="manual_en.htm">Overview</a></li>
+
+                <li><a id="toc_browse_files" class="toc_current" href="browse_files_en.htm">Browse the Album Files</a>
+                    <ul class="subtitles">
+                        <li><a href="browse_files_en.htm#SetWorkDir">Set the Working Directory</a>.</li>
+                        <li><a href="browse_files_en.htm#SortAlbums">Sorting and Searching</a>.</li>
+                    </ul>
+                </li>
+
+                <li><a id="toc_read_album" href="read_album_en.htm">Read an Album</a>
+                    <ul class="subtitles">
+                        <li><a href="read_album_en.htm#OpenAlbum">Open an Album File</a>.</li>
+                        <li><a href="read_album_en.htm#Reader">Read the Chapters</a>.</li>
+                    </ul>
+                </li>
+
+                <li><a id="toc_find_photos" href="find_photos_en.htm">Find Photos in Albums</a></li>
+            </ul>
+        </div>
+
+        <div class="content_div">
+            <h1>Browse the Album Files</h1>
+
+            <h2><a name="SetWorkDir">Set the Working Directory</a></h2>
+
+            <p>When you start the Album EPUB Browser, you see a file list screen similar to the Explorer. The default working directory is the "Album Epubs" subdirectory under the "My Documents" folder. You can either put the .album.epub files in it directly, or click the "..." button to browse another directory, as shown below.</p>
+
+            <p class="figure">
+                <img src="browse_workdir_en.jpg" />
+            </p>
+
+            <p>This software displays the information of the albums in the working directory, and you can still manage the files in this directory through Windows Explorer. As shown below, you can switch the display modes via the button "<img class="inline_img" src="listview.png" /><b>List View</b>" and "<img class="inline_img" src="iconview.png" /><b>Icon View</b>". In the list view, the complete information of the album files are listed. While in icon view, the thumbnail of the cover of the album are displayed. In the both mode, when you click an album file in the list, its cover and the complete information are displayed in the right column.</p>
+
+            <p class="figure_2c">
+                <img src="listview_en.jpg" />
+                <img src="iconview_en.jpg" />
+            </p>
+
+            <h2><a name="SortAlbums">Sorting and Searching</a></h2>
+
+            <p>Similar to Windows Explorer, this software also allows you to sort the album files in the working directory, not only by file name, but also by album title, author, or dates in ascending or descending order. That makes it easy to arrange or find the albums.</p>
+
+            <p class="figure">
+                <img src="sort_files_en.jpg" />
+            </p>
+
+            <p>除In addition to sorting, the software also offers the ability to find files by part of their name. As shown below, just type in the keyword and press the search button, then the files with the title, the author, and the location that contain this keyword will be listed immediately.</p>
+
+            <p class="figure">
+                <img src="search_files_en.jpg" />
+            </p>
+            <p style="text-align:center"><a class="next_button" href="read_album_en.htm">Next: Read an Album</a></p>
+        </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

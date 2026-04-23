@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="zh-tw" />
+    <title>Album EPUB Browser - shukaiyangtw.github.io</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="style_toc.css" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <script type="text/javascript">
+
+        function onTocClicked()
+        {
+            let toc = document.getElementById("toc_div");
+            if (toc.style.display == "block") {  toc.style.display = "none";  }
+            else {  toc.style.display = "block";  }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+<div id="page_container">
+    <div id="action_bar_row">
+        <div id="action_bar">
+
+            <div class="action_bar_button">
+                <a href="index_zh.htm"><img src="images/back.png" /></a>
+                <a class="action_bar_textlink" href="index_zh.htm">介紹</a>
+            </div>
+
+            <div id="toc_button" class="action_bar_button">
+                <a href="javascript: onTocClicked();"><img src="images/toc.png" /></a>
+                <a class="action_bar_textlink" href="javascript: onTocClicked();">目錄</a>
+            </div>
+
+            <div class="action_bar_title">
+                Album EPUB Browser 使用者手冊
+            </div>
+
+            <div class="action_bar_button">
+                <a href="index_en.htm"><img src="images/lang.png" /></a>
+                <a class="action_bar_textlink" href="read_album_en.htm">English</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="context_row">
+        <div class="context_wrapper" style="position: relative">
+
+        <div id="toc_div">
+            <ul>
+                <li><a id="toc_overview" href="manual_zh.htm">概觀</a></li>
+
+                <li><a id="toc_browse_files" href="browse_files_zh.htm">瀏覽目錄裡的相簿</a>
+                    <ul class="subtitles">
+                        <li><a href="browse_files_zh.htm#SetWorkDir">指定工作目錄</a>.</li>
+                        <li><a href="browse_files_zh.htm#SortAlbums">排序與搜尋</a>.</li>
+                    </ul>
+                </li>
+
+                <li><a id="toc_read_album" class="toc_current" href="read_album_zh.htm">閱讀相簿</a>
+                    <ul class="subtitles">
+                        <li><a href="read_album_zh.htm#OpenAlbum">開啟相簿檔案</a>.</li>
+                        <li><a href="read_album_zh.htm#Reader">閱讀相簿的內容</a>.</li>
+                    </ul>
+                </li>
+
+                <li><a id="toc_find_photos" href="find_photos_zh.htm">跨相簿尋找照片</a></li>
+            </ul>
+        </div>
+
+        <div class="content_div">
+            <h1>閱讀相簿</h1>
+
+            <h2><a name="OpenAlbum">開啟相簿檔案</a></h2>
+
+            <p>要閱讀相簿內容只要(1)點選清單內的相簿檔案項目，(2)點擊<img class="inline_img" src="open.png" /><b>閱讀相簿</b>按鈕即可，或是直接在清單中以滑鼠雙擊(double click)相簿項目。</p>
+
+            <p class="figure">
+                <img src="clickread_zh.jpg" />
+            </p>
+
+            <p>要開啟工作目錄以外的EPUB相簿檔案並不需要將它複製或搬移到工作目錄中，如下圖左所示，只要點擊<img class="inline_img" src="import.png" /><b>瀏覽檔案</b>按鈕，就會出現檔案對話框讓您選擇其他的檔案，又或者如下圖右所示，直接在Windows檔案總管中點選該檔案，按下滑鼠右鍵並選擇「開啟」或「開啟檔案」，此時系統會讓您選擇要用哪一個軟體來開啟它，請選擇Album EPUB Browser。 </p>
+
+            <p class="figure_2c">
+                <img src="browse_file_zh.jpg" />
+                <img src="openwith_zh.jpg" />
+            </p>
+
+
+
+            <h2><a name="Reader">閱讀相簿的內容</a></h2>
+
+            <p>相簿開啟後的閱讀畫面如下圖所示，左邊可點選要閱讀的篇章(chapter)，右邊是以網頁形式呈現的該篇章內容，點選畫面中的任一照片會出現如下的檢視框，點擊<img class="inline_img" src="save_as.png" /><b>另存檔案</b>可下載該照片的原始圖檔。</p>
+
+            <p class="figure">
+                <img src="readerpage_zh.png" />
+            </p>
+
+            <p class="figure">
+                <img src="photodialog_zh.jpg" />
+            </p>
+
+            <p style="text-align:center"><a class="next_button" href="find_photos_zh.htm">下一頁: 跨相簿尋找照片</a></p>
+        </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

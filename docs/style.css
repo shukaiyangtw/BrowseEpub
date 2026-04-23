@@ -1,0 +1,630 @@
+﻿html, body
+{
+    width: 100%;
+    height: 100%;
+}
+
+body
+{
+    background: white url('images/papertex.jpg');
+    margin: 0;
+    font-family: \5FAE\8EDF\6B63\9ED1\9AD4,'Microsoft JhengHei', Verdana, Helvetica, Arial, 'Microsoft Sans-serif';
+    font-size: 14pt;
+    color: #404040;
+}
+
+a:link    {  text-decoration:none  }
+a:visited {  text-decoration:none  }
+a:active  {  text-decoration:underline  }
+a:hover   {  text-decoration:underline  }
+
+pre {  font-family: Courier;  }
+
+#page_container
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#context_row
+{
+    display: flex;
+    flex-grow: 1;
+}
+
+.context_wrapper
+{
+    display: inline;
+    width: 1524px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#consent_banner
+{
+    min-height: 150px;
+    text-align: center;
+
+    background-color: Azure;
+ /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5); */
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+
+a.next_button
+{
+    display: inline-block;
+    color: white;
+    background-color: Chocolate;
+    text-indent: 0em;
+    padding: 4px 16px;
+    border-radius: 4px;
+}
+
+.indented
+{
+    margin-left: 24pt;
+    margin-right: 24pt;
+}
+
+.downloader
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+a.downloader img
+{
+    width: 300px;
+    height: 90px;
+}
+
+.ad_banner
+{
+    width: 728px;
+    height: 90px;
+}
+
+h1
+{
+    font-size: 28pt;
+    text-align: center;
+    color: RoyalBlue;
+}
+
+h2
+{
+    font-size: 24pt;
+    color: DarkSlateBlue;
+ /* text-decoration: underline; */
+}
+
+h3
+{
+    font-size: 20pt;
+ /* color: DarkSlateBlue;
+    text-decoration: underline; */
+}
+
+h4
+{
+    font-size: 18pt;
+ /* color: DarkSlateBlue; */
+}
+
+span.label_button
+{
+    display: inline-block;
+    width: 150px;
+    height: 48px;
+    margin: 5px;
+    text-align: center;
+    color: black;
+    font-size: 14pt;
+    background-image: url('images/label.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+span.label_button a
+{
+    color: RoyalBlue;
+    font-weight: bold;
+}
+
+img.inline_img
+{
+    height: 24px;
+    vertical-align:middle
+}
+
+/* Action Bar Styles ---------------------------------------------------------------------------- */
+
+#action_bar_row
+{
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    background: black url('images/woodtex.gif') 100% repeat-x;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    min-height: 24px;
+}
+
+#action_bar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1524px;
+    height: 64px;
+    margin: 0px auto;
+    font-size: 18pt;
+
+    color: white;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#action_bar_logo
+{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#action_bar_logo img
+{   height: 100%;  }
+
+div.action_bar_title
+{
+    display: inline-block;
+    flex-grow: 1;
+    flex-shrink: 1;
+    color: Yellow;
+ /* font-size: smaller; */
+    text-align: center;
+ /* border: 1px solid yellow; */
+}
+
+div.action_bar_button
+{
+    display: inline-block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 8px;
+    margin-right: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+div.action_bar_button img
+{
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+}
+
+div.action_bar_button a
+{
+    color: White;
+    font-size: 20pt;
+}
+
+a.action_bar_textlink
+{
+    font-size: 20pt;
+    padding-left: 8px;
+}
+
+/* Flex Grid Styles ----------------------------------------------------------------------------- */
+
+div.grid_container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+div.grid_item
+{
+    display: inline-block;
+    flex: 1 1 240px;
+    width: 240px;
+    max-width: 300px;
+    min-height: 180px;
+    text-align: center;
+    vertical-align: top;
+ /* border: 1px solid gray; */
+}
+
+div.grid_item img
+{
+    width: 240px;
+    border-radius: 10px;
+}
+
+/* Character List Styles ------------------------------------------------------------------------ */
+
+div.portrait_item
+{
+    display: inline-block;
+    flex: 1 1 auto;
+    width: 460px;
+    max-width: 500px;
+    min-height: 180px;
+    text-align: center;
+    vertical-align: top;
+
+ /* border: 1px gray solid;
+    border-radius: 10px; */
+}
+
+div.portrait_item img
+{
+    display: inline-block;
+    width: 230px;
+}
+
+div.portrait_brief
+{
+    display: inline-block;
+    width: 230px;
+    text-align: justify;
+    vertical-align:top;
+}
+
+p.name_label
+{
+    font-size: larger;
+    font-weight: bold;
+    color: RoyalBlue;
+}
+
+/* Footer Styles -------------------------------------------------------------------------------- */
+
+#footer_row
+{
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    background: black url('images/woodtex.jpg') 100% repeat-x;
+    width: 100%;
+    min-height: 24px;
+}
+
+#footer_div
+{
+    display: flex;
+    width: 1524px;
+    height: 32px;
+    margin: 0px auto;
+    font-size: 12pt;
+    padding-top: 8px;
+
+    color: LightGray;
+    text-align: left;
+    vertical-align: middle;
+}
+
+div.footer_text
+{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    color: LightGray;
+    text-align: left;
+}
+
+#footer_div a
+{   color: LightGray;  }
+
+div.footer_button
+{
+    display: inline-block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 8px;
+}
+
+div.footer_button img
+{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+a.footer_button_textlink
+{
+    font-size: 14pt;
+    padding-left: 4px;
+}
+
+/* Responsive Styles ----------------------------------------------------------------------- */
+
+@media only screen and (min-width:1024px) and (max-width:1523px)
+{
+    #action_bar
+    {
+        width: 1024px;
+        height: 48px;
+        font-size: 18pt;
+    }
+
+    div.action_bar_button
+    {
+        display: inline-block;
+        padding: 4px;
+        margin-right: 12px;
+    }
+
+    div.action_bar_button img
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    div.action_bar_button a
+    {
+        color: White;
+        font-size: 18pt;
+    }
+
+    a.action_bar_textlink
+    {   font-size: 18pt;  }
+
+    .context_wrapper
+    {   width: 1024px;  }
+
+    .ad_banner
+    {
+        width: 728px;
+        height: 90px;
+    }
+
+    #footer_div
+    {
+        width: 1024px;
+        height: 48px;
+        font-size: 14pt;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px)
+{
+    #action_bar
+    {
+        width: 768px;
+        height: 48px;
+        font-size: 16pt;
+    }
+
+    div.action_bar_button
+    {
+        display: inline-block;
+        padding: 8px 4px;
+        margin-right: 0px;
+    }
+
+    div.action_bar_button img
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+    div.action_bar_button a
+    {
+        color: White;
+        font-size: 15pt;
+    }
+
+    a.action_bar_textlink
+    {
+        font-size: 15pt;
+        padding-left: 2px;
+    }
+
+    .context_wrapper
+    {
+        width: 768px;
+        font-size: 11pt;
+    }
+
+    .ad_banner
+    {
+        width: 468px;
+        height: 60px;
+    }
+
+    .indented
+    {
+        margin-left: 20pt;
+        margin-right: 20pt;
+    }
+
+    h1 {  font-size: 20pt;  }
+    h2 {  font-size: 18pt;  }
+
+    h3 {  font-size: 16pt;  }
+    h4 {  font-size: 14pt;  }
+
+    div.portrait_item
+    {
+        width: 768px;
+        max-width: 768px;
+    }
+
+    div.portrait_item img {  width: 380px;  }
+    div.portrait_brief    {  width: 380px;  }
+
+    #footer_div
+    {
+        width: 768px;
+        height: 48px;
+        font-size: 12pt;
+    }
+}
+
+@media only screen and (min-width:512px) and (max-width:767px)
+{
+    #action_bar
+    {
+        width: 512px;
+        height: 48px;
+        font-size: 14pt;
+    }
+
+    div.action_bar_button
+    {
+        display: inline-block;
+        padding: 8px 2px;
+        margin-right: 4px;
+    }
+
+    div.action_bar_button img
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+    div.action_bar_button a
+    {
+        color: White;
+        font-size: 12pt;
+    }
+
+    a.action_bar_textlink
+    {   display: none;  }
+
+    .context_wrapper
+    {
+        width: 512px;
+        font-size: 10pt;
+    }
+
+    .ad_banner
+    {
+        width: 468px;
+        height: 60px;
+    }
+
+    .indented
+    {
+        margin-left: 18pt;
+        margin-right: 18pt;
+    }
+
+    h1 {  font-size: 18pt;  }
+    h2 {  font-size: 16pt;  }
+    h3 {  font-size: 14pt;  }
+    h4 {  font-size: 12pt;  }
+
+    div.portrait_item
+    {
+        width: 512px;
+        max-width: 512px;
+    }
+
+    div.portrait_item img {  width: 250px;  }
+    div.portrait_brief    {  width: 250px;  }
+
+    #footer_div
+    {
+        width: 512px;
+        height: 32px;
+        font-size: 10pt;
+    }
+
+    a.footer_button_textlink
+    {   display: none;  }
+}
+
+@media only screen and (max-width:511px)
+{
+    #action_bar
+    {
+        width: 320px;
+        height: 40px;
+        font-size: 12pt;
+    }
+
+    div.action_bar_title
+    {   font-size: smaller;  }
+
+    div.action_bar_button
+    {
+        display: inline-block;
+        padding: 4px 4px;
+        margin-right: 0px;
+    }
+
+    div.action_bar_button img
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+    div.action_bar_button a
+    {
+        color: White;
+        font-size: 8pt;
+    }
+
+    a.action_bar_textlink
+    {   display: none;  }
+
+    .context_wrapper
+    {
+        width: 320px;
+        font-size: 8pt;
+    }
+
+    .ad_banner
+    {
+        width: 320px;
+        height: 100px;
+    }
+
+    div.grid_item
+    {   width: 310px;  }
+
+    div.portrait_item
+    {
+        width: 320px;
+        max-width: 320px;
+    }
+
+    div.portrait_item img {  width: 320px;  }
+    div.portrait_brief    {  width: 320px;  }
+
+    .indented
+    {
+        margin-left: 18pt;
+        margin-right: 18pt;
+    }
+
+    h1 {  font-size: 18pt;  }
+    h2 {  font-size: 14pt;  }
+    h3 {  font-size: 12pt;  }
+    h4 {  font-size: 10pt;  }
+
+    #footer_div
+    {
+        width: 320px;
+        height: 32px;
+        font-size: 8pt;
+    }
+
+    a.footer_button_textlink
+    {   display: none;  }
+}

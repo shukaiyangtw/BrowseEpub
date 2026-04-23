@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    <title>Album EPUB Browser - shukaiyangtw.github.io</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="style_toc.css" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <script type="text/javascript">
+
+        function onTocClicked()
+        {
+            let toc = document.getElementById("toc_div");
+            if (toc.style.display == "block") {  toc.style.display = "none";  }
+            else {  toc.style.display = "block";  }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+<div id="page_container">
+    <div id="action_bar_row">
+        <div id="action_bar">
+
+            <div class="action_bar_button">
+                <a href="index_en.htm"><img src="images/back.png" /></a>
+                <a class="action_bar_textlink" href="index_en.htm">Introduction</a>
+            </div>
+
+            <div id="toc_button" class="action_bar_button">
+                <a href="javascript: onTocClicked();"><img src="images/toc.png" /></a>
+                <a class="action_bar_textlink" href="javascript: onTocClicked();">Topics</a>
+            </div>
+
+            <div class="action_bar_title">
+                Album EPUB Browser User Manual
+            </div>
+
+            <div class="action_bar_button">
+                <a href="index_zh.htm"><img src="images/lang.png" /></a>
+                <a class="action_bar_textlink" href="read_album_zh.htm">中文</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="context_row">
+        <div class="context_wrapper" style="position: relative">
+
+        <div id="toc_div">
+            <ul>
+                <li><a id="toc_overview" href="manual_en.htm">Overview</a></li>
+
+                <li><a id="toc_browse_files" href="browse_files_en.htm">Browse the Album Files</a>
+                    <ul class="subtitles">
+                        <li><a href="browse_files_en.htm#SetWorkDir">Set the Working Directory</a>.</li>
+                        <li><a href="browse_files_en.htm#SortAlbums">Sorting and Searching</a>.</li>
+                    </ul>
+                </li>
+
+                <li><a id="toc_read_album" class="toc_current" href="read_album_en.htm">Read an Album</a>
+                    <ul class="subtitles">
+                        <li><a href="read_album_en.htm#OpenAlbum">Open an Album File</a>.</li>
+                        <li><a href="read_album_en.htm#Reader">Read the Chapters</a>.</li>
+                    </ul>
+                </li>
+
+                <li><a id="toc_find_photos" href="find_photos_en.htm">Find Photos in Albums</a></li>
+            </ul>
+        </div>
+
+        <div class="content_div">
+            <h1>Read an Album</h1>
+
+            <h2><a name="OpenAlbum">Open an Album File</a></h2>
+
+            <p>To read the album content, just (1) click an album file item in the list, (2) click the "<img class="inline_img" src="open.png" /><b>Read Album</b>" button or double click the album item in the list directly.</p>
+
+            <p class="figure">
+                <img src="clickread_en.jpg" />
+            </p>
+
+            <p>To open an EPUB album file out of the working directory, you don't need to copy or move it to the directory. As shown below, just click the "<img class="inline_img" src="import.png" /><b>Browse Files</b>" button, and the file dialog box appears for you to select an album file. Or directly click the file in the Windows Explorer, right-click on it, and select "Open" or "Open with", then choose Album EPUB Browser to open it.</p>
+
+            <p class="figure_2c">
+                <img src="browse_file_en.jpg" />
+                <img src="openwith_en.jpg" />
+            </p>
+
+            <h2><a name="Reader">Read the Chapters</a></h2>
+
+            <p>When the album is opened, the screen is shown as below. You can click the chapter you want to read on the left side, then the content of the chapter is presented as a web page on the right side. Click any photo, the view box pops out, and you can download the original image file of the photo by clicking "<img class="inline_img" src="save_as.png" /><b>Save As</b>".</p>
+
+            <p class="figure">
+                <img src="readerpage_en.png" />
+            </p>
+
+            <p class="figure">
+                <img src="photodialog_en.jpg" />
+            </p>
+
+            <p style="text-align:center"><a class="next_button" href="find_photos_en.htm">Next: Find Photos in Albums</a></p>
+        </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

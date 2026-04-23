@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="zh-tw" />
+    <title>Album EPUB Browser - shukaiyangtw.github.io</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="style_toc.css" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <script type="text/javascript">
+
+        function onTocClicked()
+        {
+            let toc = document.getElementById("toc_div");
+            if (toc.style.display == "block") {  toc.style.display = "none";  }
+            else {  toc.style.display = "block";  }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+<div id="page_container">
+    <div id="action_bar_row">
+        <div id="action_bar">
+
+            <div class="action_bar_button">
+                <a href="index_zh.htm"><img src="images/back.png" /></a>
+                <a class="action_bar_textlink" href="index_zh.htm">介紹</a>
+            </div>
+
+            <div id="toc_button" class="action_bar_button">
+                <a href="javascript: onTocClicked();"><img src="images/toc.png" /></a>
+                <a class="action_bar_textlink" href="javascript: onTocClicked();">目錄</a>
+            </div>
+
+            <div class="action_bar_title">
+                Album EPUB Browser 使用者手冊
+            </div>
+
+            <div class="action_bar_button">
+                <a href="index_en.htm"><img src="images/lang.png" /></a>
+                <a class="action_bar_textlink" href="find_photos_en.htm">English</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="context_row">
+        <div class="context_wrapper" style="position: relative">
+
+        <div id="toc_div">
+            <ul>
+                <li><a id="toc_overview" href="manual_zh.htm">概觀</a></li>
+
+                <li><a id="toc_browse_files" href="browse_files_zh.htm">瀏覽目錄裡的相簿</a>
+                    <ul class="subtitles">
+                        <li><a href="browse_files_zh.htm#SetWorkDir">指定工作目錄</a>.</li>
+                        <li><a href="browse_files_zh.htm#SortAlbums">排序與搜尋</a>.</li>
+                    </ul>
+                </li>
+
+                <li><a id="toc_read_album" href="read_album_zh.htm">閱讀相簿</a>
+                    <ul class="subtitles">
+                        <li><a href="read_album_zh.htm#OpenAlbum">開啟相簿檔案</a>.</li>
+                        <li><a href="read_album_zh.htm#Reader">閱讀相簿的內容</a>.</li>
+                    </ul>
+                </li>
+
+                <li><a id="toc_find_photos" class="toc_current" href="find_photos_zh.htm">跨相簿尋找照片</a></li>
+            </ul>
+        </div>
+
+        <div class="content_div">
+            <h1>跨相簿尋找照片</h1>
+
+            <p>點擊主畫面上的<img class="inline_img" src="magnifier.png" /><b>相簿中尋找</b>按鈕，會看到如下圖的搜尋介面，首先請選擇照片的起迄日期，接著選擇性地在標題、作者、地點、內文的搜尋框中填寫要搜尋的文字，然後按下搜尋按鈕，例如下面的例子是要搜尋10年間在碧潭所拍攝的照片，搜尋進行當中如果想要中止，可按下右下角進度列旁的<img class="inline_img" src="stop.png" /><b>取消</b>按鈕。</b>
+
+            <p class="figure">
+                <img src="find_photos_zh.jpg" />
+            </p>
+
+            <p>獲得的搜尋結果如下圖所示，Album EPUB Browser會直接列出符合搜尋結果的照片段落，並且註明這是哪一本相簿的哪一篇章裡的內容，您可以直接在此點選照片，將會出現前述的照片檢視框，並可下載該照片的原始圖檔，或是點選相簿或篇章標題旁的「更多…」連結，將可前往該相簿或篇章進行閱讀。</p>
+
+            <p class="figure">
+                <img src="finderpage_zh.png" />
+            </p>
+
+            <p>最後要特別強調的是，這個跨相簿尋找照片的功能並不是去辨識照片「影像裡」的內容，而是使用者以<a href="imgs2epub/index_zh.htm">Album EPUB Studio</a>製作的時候，就已經以文字標註或描述了這些照片的時間地點與故事，本軟體的搜尋功能乃是在這些文字中搜尋，所以才能快速地獲得結果。</p>
+        </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="zh-tw" />
+    <title>Album EPUB Browser - shukaiyangtw.github.io</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="style_toc.css" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <script type="text/javascript">
+
+        function onTocClicked()
+        {
+            let toc = document.getElementById("toc_div");
+            if (toc.style.display == "block") {  toc.style.display = "none";  }
+            else {  toc.style.display = "block";  }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+<div id="page_container">
+    <div id="action_bar_row">
+        <div id="action_bar">
+
+            <div class="action_bar_button">
+                <a href="index_zh.htm"><img src="images/back.png" /></a>
+                <a class="action_bar_textlink" href="index_zh.htm">介紹</a>
+            </div>
+
+            <div id="toc_button" class="action_bar_button">
+                <a href="javascript: onTocClicked();"><img src="images/toc.png" /></a>
+                <a class="action_bar_textlink" href="javascript: onTocClicked();">目錄</a>
+            </div>
+
+            <div class="action_bar_title">
+                Album EPUB Browser 使用者手冊
+            </div>
+
+            <div class="action_bar_button">
+                <a href="index_en.htm"><img src="images/lang.png" /></a>
+                <a class="action_bar_textlink" href="browse_files_en.htm">English</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="context_row">
+        <div class="context_wrapper" style="position: relative">
+
+        <div id="toc_div">
+            <ul>
+                <li><a id="toc_overview" href="manual_zh.htm">概觀</a></li>
+
+                <li><a id="toc_browse_files" class="toc_current" href="browse_files_zh.htm">瀏覽目錄裡的相簿</a>
+                    <ul class="subtitles">
+                        <li><a href="browse_files_zh.htm#SetWorkDir">指定工作目錄</a>.</li>
+                        <li><a href="browse_files_zh.htm#SortAlbums">排序與搜尋</a>.</li>
+                    </ul>
+                </li>
+
+                <li><a id="toc_read_album" href="read_album_zh.htm">閱讀相簿</a>
+                    <ul class="subtitles">
+                        <li><a href="read_album_zh.htm#OpenAlbum">開啟相簿檔案</a>.</li>
+                        <li><a href="read_album_zh.htm#Reader">閱讀相簿的內容</a>.</li>
+                    </ul>
+                </li>
+
+                <li><a id="toc_find_photos" href="find_photos_zh.htm">跨相簿尋找照片</a></li>
+            </ul>
+        </div>
+
+        <div class="content_div">
+            <h1>瀏覽目錄裡的相簿</h1>
+
+            <h2><a name="SetWorkDir">指定工作目錄</a></h2>
+
+            <p>一啟動Album EPUB Browser看到的是類似檔案總管的檔案清單畫面，預設的工作目錄是「我的文件」資料夾底下的「Album Epubs」子目錄，您可以直接把 .album.epub 檔案們放在這裡，或是點擊「…」按鈕，會出現瀏覽資料夾的對話框讓您選擇其他的檔案目錄，如下圖所示。</p>
+
+            <p class="figure">
+                <img src="browse_workdir_zh.jpg" />
+            </p>
+
+            <p>在本軟體會顯示您以此指定的目錄下的相簿資訊，您仍是透過Windows檔案總管理這個目錄裡的檔案即可，如下圖所示，您可以透過左上角的<img class="inline_img" src="listview.png" /><b>條列模式</b>與<img class="inline_img" src="iconview.png" /><b>縮圖模式</b>來切換相簿的顯示方式，在條列模式中會列出相簿檔案的完整資訊，而在縮圖模式中會顯示相簿檔案的封面縮圖，不管是哪一種模式下，點選清單中的相簿檔案，在右側的相簿資訊欄位都會顯示相簿的封面圖與完整資訊。</p>
+
+            <p class="figure_2c">
+                <img src="listview_zh.jpg" />
+                <img src="iconview_zh.jpg" />
+            </p>
+
+            <h2><a name="SortAlbums">排序與搜尋</a></h2>
+
+            <p>就如同在Windows檔案總管裡檢視檔案清單一般，在本軟體裡也可以讓您對工作目錄裡的相簿檔案進行排序，而且不只是以檔案名稱，而是以相簿標題、作者、相簿拍攝日期進行遞增或遞減的排序，方便您排列或尋找相簿。</p>
+
+            <p class="figure">
+                <img src="sort_files_zh.jpg" />
+            </p>
+
+            <p>除了排序以外，本軟體也提供以部分名稱尋找檔案的功能，如下圖所示，只要輸入文字並按下<img class="inline_img" src="search.png" /><b>搜尋</b>按鈕，那麼相簿標題、作者、主要拍攝地點包含此文字的檔案就會立刻列出。</p>
+
+            <p class="figure">
+                <img src="search_files_zh.jpg" />
+            </p>
+            <p style="text-align:center"><a class="next_button" href="read_album_zh.htm">下一頁: 閱讀相簿</a></p>
+        </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

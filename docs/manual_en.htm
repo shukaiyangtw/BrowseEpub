@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    <title>Album EPUB Browser - shukaiyangtw.github.io</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="style_toc.css" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <script type="text/javascript">
+
+        function onTocClicked()
+        {
+            let toc = document.getElementById("toc_div");
+            if (toc.style.display == "block") {  toc.style.display = "none";  }
+            else {  toc.style.display = "block";  }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+<div id="page_container">
+    <div id="action_bar_row">
+        <div id="action_bar">
+
+            <div class="action_bar_button">
+                <a href="index_en.htm"><img src="images/back.png" /></a>
+                <a class="action_bar_textlink" href="index_en.htm">Introduction</a>
+            </div>
+
+            <div id="toc_button" class="action_bar_button">
+                <a href="javascript: onTocClicked();"><img src="images/toc.png" /></a>
+                <a class="action_bar_textlink" href="javascript: onTocClicked();">Topics</a>
+            </div>
+
+            <div class="action_bar_title">
+                Album EPUB Browser User Manual
+            </div>
+
+            <div class="action_bar_button">
+                <a href="index_zh.htm"><img src="images/lang.png" /></a>
+                <a class="action_bar_textlink" href="manual_zh.htm">中文</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="context_row">
+        <div class="context_wrapper" style="position: relative">
+
+        <div id="toc_div">
+            <ul>
+                <li><a id="toc_overview" class="toc_current" href="manual_en.htm">Overview</a></li>
+
+                <li><a id="toc_browse_files" href="browse_files_en.htm">Browse the Album Files</a>
+                    <ul class="subtitles">
+                        <li><a href="browse_files_en.htm#SetWorkDir">Set the Working Directory</a>.</li>
+                        <li><a href="browse_files_en.htm#SortAlbums">Sorting and Searching</a>.</li>
+                    </ul>
+                </li>
+
+                <li><a id="toc_read_album" href="read_album_en.htm">Read an Album</a>
+                    <ul class="subtitles">
+                        <li><a href="read_album_en.htm#OpenAlbum">Open an Album File</a>.</li>
+                        <li><a href="read_album_en.htm#Reader">Read the Chapters</a>.</li>
+                    </ul>
+                </li>
+
+                <li><a id="toc_find_photos" href="find_photos_en.htm">Find Photos in Albums</a></li>
+            </ul>
+        </div>
+
+        <div class="content_div">
+            <h1>Overview</h1>
+
+            <p>This is a reader developed for the album EPUB files produced by <a href="Imgs2Epub/index_en.htm">Album EPUB Studio</a>. Although <a href="Imgs2Epub/index_en.htm">Album EPUB Studio</a> produces standard EPUB files that can be opened by any reader software or hardware. Album EPUB Browser can open the files much faster, even if the sizes of them are hundreds of MB or more than GB. This is because Album EPUB Browser recognizes the exclusive information that <a href="Imgs2Epub/index_en.htm">Album EPUB Studio</a> has embedded in these EPUB album files, so it doesn't need to unzip the whole album file to retrieve the part of the file that the user wants to read to display it. Furthermore, the software can search for photos in multiple album files so that the user doesn't have to click on the photos one by one. The realization of this search function depends on the fact that the user has properly labeled the photos with the date, location and a short description when creating the album files with <a href="Imgs2Epub/index_en.htm">Album EPUB Studio</a>.</p>
+
+            <p>Album EPUB Browser has three main functions: First, it lists the EPUB albums in the selected working directory. Windows Explorer basically only lists the file name, file date, and file size of album files. This software can list the cover, album title, author, and dates of the albums in the working directory. Second, this software can open the album files quickly and download the photos. Third, you can search photos in the album files in the working directory (excluding subdirectories) via this software. You select the shooting date range, locations, or some keyword of the photo-description text, then it picks out the photo s in the album files, and you can view and download the photos directly in the search results.</p>
+
+            <p style="text-align:center"><a class="next_button" href="browse_files_en.htm">Next: Browse the Album Files</a></p>
+        </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
